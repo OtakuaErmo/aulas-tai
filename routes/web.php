@@ -46,5 +46,15 @@ Route::group(['middleware'=>'auth'], function() {
     Route::get('/curso/remove/{id}', 'CursoController@remove');
     Route::post('/curso/update/', 'CursoController@update');
     Route::post('/curso/search/', 'CursoController@search');
+
+    Route::get('/turma', 'TurmaController@index')->name('turma.home');
+    Route::get('/turma/create', 'TurmaController@create'); //carrega o formulário
+    Route::post('/turma/store', 'TurmaController@store'); //salvar os dados do formulário
+    Route::get('/turma/edit/{id}', 'TurmaController@edit');
+    Route::get('/turma/remove/{id}', 'TurmaController@remove');
+    Route::post('/turma/update/', 'TurmaController@update');
+    Route::post('/turma/search/', 'TurmaController@search');
+
+//    Route::resource('turma', 'TurmaController');
 });
 

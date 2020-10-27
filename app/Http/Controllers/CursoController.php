@@ -129,7 +129,7 @@ class CursoController extends Controller
 
     public function search(Request $request)
     {
-        $query = DB::table('curso');
+        $query = DB::table('curso');    
         if (!empty($request->nome)) {
             $query->where('nome', 'like', '%' . $request->nome . '%');
         }
