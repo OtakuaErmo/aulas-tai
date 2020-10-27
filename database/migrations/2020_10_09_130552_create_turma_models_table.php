@@ -13,7 +13,7 @@ class CreateTurmaModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('turma_models', function (Blueprint $table) {
+        Schema::create('turma', function (Blueprint $table) {
             $table->id();
             $table->string('nome', 100);
             $table->string('sigla', 100)->nullable();
