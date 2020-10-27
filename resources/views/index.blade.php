@@ -16,6 +16,7 @@
         <div class="col">
             <a type="button" class="btn btn-warning btn-outline-dark btn-lg btn-block" href="{{ route("aluno.home") }}">ALUNOS</a>
             <a type="button" class="btn btn-warning btn-outline-dark btn-lg btn-block" href="{{ route("curso.home")}}">CURSOS</a>
+            <a type="button" class="btn btn-warning btn-outline-dark btn-lg btn-block" href="{{ route("turma.home")}}">TURMAS</a>
         </div>
         <div class="col">
         </div>

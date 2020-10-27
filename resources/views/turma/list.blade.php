@@ -39,6 +39,7 @@
                                     <th scope="col">ID</th>
                                     <th scope="col">Nome</th>
                                     <th scope="col">Sigla</th>
+                                    <th scope="col">Curso Id</th>
                                     <th scope="col"></th>
                                     <th scope="col"></th>
                                 </tr>
@@ -50,7 +51,7 @@
                                     <td>{{$dados->nome}}</td>
                                     <td>{{$dados->sigla}}</td>
                                     <td>{{$dados->curso_id}}</td>
-                                    <td><a href="{{--action('TurmaController@edit', $dados->id)--}}"
+                                    <td><a href="{{action('TurmaController@edit', $dados->id)}}"
                                             class="btn btn-warning btn-outline-dark"> <i class="fa fa-edit"></i> Editar</a></td>
                                     <td><a href="{{--action('TurmaController@remove', $dados->id)--}}"
                                             onclick="return confirm('Tem certeza que deseja remover?')"

@@ -33,7 +33,7 @@ class TurmaController extends Controller
      */
     public function create()
     {
-        return view('turma.create');
+
     }
 
     /**
@@ -44,14 +44,7 @@ class TurmaController extends Controller
      */
     public function store(Request $request)
     {
-        $objTurma = new TurmaModel();
-        $objTurma->nome = $request->nome;
-        $objTurma->sigla = $request->sigla;
-        $objTurma->curso_id = $request->curso_id;
 
-        $objTurma->save();
-
-        return redirect()->action('TurmaController@index')->with('sucess', 'Turma salva!');
     }
 
     /**
@@ -71,9 +64,9 @@ class TurmaController extends Controller
      * @param  \App\TurmaModel  $turmaModel
      * @return \Illuminate\Http\Response
      */
-    public function edit(TurmaModel $turmaModel)
+    public function edit($id)
     {
-        //
+
     }
 
     /**
