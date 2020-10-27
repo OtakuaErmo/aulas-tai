@@ -41,6 +41,7 @@
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('aluno.home')}}">Alunos</a>
                             <a class="dropdown-item" href="{{ route('curso.home')}}">Curso</a>
+                            <a class="dropdown-item" href="{{ route('turma.home')}}">Turma</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="/">Página Inicial</a>
                           </div>
